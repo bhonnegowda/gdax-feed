@@ -11,7 +11,9 @@ Top right, hamburger icon, click on API, This will open a page which will help y
 4. set permissions for this access.
 
 ### Step 2:
-java -jar command-line.jar \ 
-      --gdax.api.phrase=<your-gdax-passphrase> \
-      --gdax.api.secret=<your-gdax-secret> \
-      --gdax.api.key=<your-gdax-key>
+```
+java -jar crypto-feed-consumer-0.0.1-SNAPSHOT.jar \ 
+            --gdax.api.phrase=<your-gdax-passphrase> \
+            --gdax.api.secret=<your-gdax-secret> \
+            --gdax.api.key=<your-gdax-key>
+```
