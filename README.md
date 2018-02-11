@@ -1,6 +1,7 @@
-# gdax-feed
+# cryptocurrencies-feed
 
-Consume Gdax real-time feed using websocket.
+1. Consume Gdax real-time feed using websocket.
+2. get limited cryptocurrencies information from coinmarketcap public rest api. 
 
 ### Step 1: 
 create an account on https://www.gdax.com/ or use your coinbase credentials to login to gdax. 
