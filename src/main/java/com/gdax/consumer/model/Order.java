@@ -12,23 +12,9 @@ public class Order {
     @JsonProperty("product_id")
     private String productId;
 
-    private Long sequence;
-
-    @JsonProperty("order_id")
-    private String orderId;
-
-    private String size;
-    private String price;
-    private String side;
-
-    @JsonProperty("order_type")
-    private String orderType;
-
-    private String funds;
-
-    @JsonProperty("remaining_size")
-    private String remainingSize;
-    private String reason;
+    private String[][] bids;
+    private String[][] asks;
+    private String[][] changes;
 
     public Order() {
     }
@@ -57,75 +43,27 @@ public class Order {
         this.productId = productId;
     }
 
-    public Long getSequence() {
-        return sequence;
+    public String[][] getBids() {
+        return bids;
     }
 
-    public void setSequence(Long sequence) {
-        this.sequence = sequence;
+    public void setBids(String[][] bids) {
+        this.bids = bids;
     }
 
-    public String getOrderId() {
-        return orderId;
+    public String[][] getAsks() {
+        return asks;
     }
 
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
+    public void setAsks(String[][] asks) {
+        this.asks = asks;
     }
 
-    public String getSize() {
-        return size;
+    public String[][] getChanges() {
+        return changes;
     }
 
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public String getSide() {
-        return side;
-    }
-
-    public void setSide(String side) {
-        this.side = side;
-    }
-
-    public String getOrderType() {
-        return orderType;
-    }
-
-    public void setOrderType(String orderType) {
-        this.orderType = orderType;
-    }
-
-    public String getFunds() {
-        return funds;
-    }
-
-    public void setFunds(String funds) {
-        this.funds = funds;
-    }
-
-    public String getRemainingSize() {
-        return remainingSize;
-    }
-
-    public void setRemainingSize(String remainingSize) {
-        this.remainingSize = remainingSize;
-    }
-
-    public String getReason() {
-        return reason;
-    }
-
-    public void setReason(String reason) {
-        this.reason = reason;
+    public void setChanges(String[][] changes) {
+        this.changes = changes;
     }
 }

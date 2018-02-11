@@ -3,6 +3,7 @@
 *.iml
 # Log file
 *.log
+log.json
 
 .DS_Store
 */target/**

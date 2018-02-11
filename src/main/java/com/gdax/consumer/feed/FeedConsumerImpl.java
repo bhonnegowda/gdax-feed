@@ -20,13 +20,10 @@ public class FeedConsumerImpl implements FeedConsumer {
         try {
             Order order = MAPPER.readValue(message, Order.class);
             switch (order.getType().toLowerCase()) {
-            case "received" :
+            case "snapshot" :
                 log.info(message);
                 break;
-            case "open" :
-                log.info(message);
-                break;
-            case "done":
+            case "l2update" :
                 log.info(message);
                 break;
             default:
